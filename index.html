@@ -141,7 +141,9 @@ footer{background:#0b6b3a;color:#fff;text-align:center;padding:15px}
 
 <div id="mySidebar" class="sidebar">
 <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
-
+<!-- Hamburger Button -->
+<button class="menu-btn" onclick="openMenu()">☰</button>
+  
 <a href="#welcome" onclick="closeMenu()">Home</a>
 <a href="#about" onclick="closeMenu()">About</a>
 <a href="#staff" onclick="closeMenu()">Staff</a>
@@ -1173,11 +1175,20 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 <footer>
 © 2026 Rahmaniyya Madarasa Olavilam
 </footer>
-<script>
-window.onload = function () {
-    window.scrollTo(0, 0);
-};
-</script>
-
+ <script>
+1179: window.onload = function () {
+1180:     window.scrollTo(0, 0);
+1181: };
+1182: 
+1183: function openMenu() {
+1184:     document.getElementById("mySidebar").style.width = "250px";
+1185: }
+1186: 
+1187: function closeMenu() {
+1188:     document.getElementById("mySidebar").style.width = "0";
+1189: }
+1190: </script>
+  
+  
 </body>
 </html>
