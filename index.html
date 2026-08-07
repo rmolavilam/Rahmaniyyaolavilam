@@ -13,7 +13,7 @@ ii<!DOCTYPE html>
     background-position: center;
     background-attachment: fixed;
     color: #222;
-  }
+  
   
 }
 html {
@@ -1464,9 +1464,15 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
         </p>
     </div>
 </section>
+
 <footer>
 © 2026 Rahmaniyya Madarasa Olavilam
 </footer>
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+</div>
 
 <script>
 window.onload = function () {
@@ -1490,10 +1496,6 @@ function closeLightbox() {
     document.getElementById("lightbox").classList.remove("active");
 }
 </script>
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="">
-</div>
 
 </body>
 </html>
