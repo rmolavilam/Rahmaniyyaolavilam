@@ -1482,10 +1482,8 @@ function closeMenu() {
     <script>
 function openLightbox(src) {
     document.getElementById("lightbox").classList.add("active");
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="">
-</div>
-    document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox-img").src = src;
+
 }
 
 function closeLightbox() {
@@ -1493,6 +1491,9 @@ function closeLightbox() {
 }
 </script>
 </script>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
   
   
 </body>
