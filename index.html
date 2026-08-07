@@ -157,6 +157,41 @@ footer{background:#0b6b3a;color:#fff;text-align:center;padding:15px}
 
 .lightbox.active {
     display: flex;
+  /* Gallery Folder Style */
+details {
+    margin: 8px 0;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 8px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "▶";
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+details[open] > summary::before {
+    content: "▼";
+}
+
+.month-content {
+    margin-left: 35px;
+    margin-top: 8px;
+  }
     }
 .menu-btn {
     position: fixed;
@@ -1150,6 +1185,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 April</summary>
+     <div class="month-content">
+       
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1171,6 +1208,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📁 Program Name</summary>
+     <div class="month-content">
+
 
 <div class="gallery-grid">
 
@@ -1185,6 +1224,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 June</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1202,6 +1243,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 July</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1219,6 +1262,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 August</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1236,6 +1281,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 September</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1253,6 +1300,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 October</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1270,6 +1319,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 November</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
@@ -1287,6 +1338,8 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <details>
 <summary>📅 December</summary>
+     <div class="month-content">
+
 
 <details>
 <summary>📁 Program Name</summary>
