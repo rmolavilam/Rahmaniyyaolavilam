@@ -1232,8 +1232,12 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
 
 <div class="gallery-grid">
 
-<img src=IMG-20260605-WA0056.jpg class="gallery-img">
-<img src=IMG-20260605-WA0049.jpg class="gallery-img">
+<img src=IMG-20260605-WA0056.jpg
+  class="gallery-img"onclick="openLightbox(this.src)">
+  
+<img src=IMG-20260605-WA0049.jpg 
+  class="gallery-jpg"onclick="openLightbox(this.src)">
+  
 
 </div>
 
@@ -1475,6 +1479,19 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("mySidebar").style.width = "0";
 }
+    <script>
+function openLightbox(src) {
+    document.getElementById("lightbox").classList.add("active");
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+</div>
+    document.getElementById("lightbox-img").src = src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
+}
+</script>
 </script>
   
   
