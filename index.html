@@ -303,6 +303,238 @@ details[open] > summary::before {
     font-size: 16px;
     line-height: 1.8;
     color: #444444;
+  /* ===== PREMIUM SOCIAL CONTACT SECTION ===== */
+
+.connect-section {
+    padding: 60px 22px;
+    box-sizing: border-box;
+}
+
+.connect-section * {
+    box-sizing: border-box;
+}
+
+.connect-header {
+    max-width: 650px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.connect-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #d1ad37;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.connect-header h2 {
+    margin: 0 0 14px;
+    color: #116b43;
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.connect-header p {
+    margin: 0;
+    color: #626b67;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-card {
+    min-width: 0;
+    padding: 30px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #e5ece7;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(12, 55, 35, 0.06);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    border-color: #b8d8c5;
+    box-shadow: 0 16px 35px rgba(12, 55, 35, 0.12);
+}
+
+.social-icon {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 18px;
+}
+
+.social-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.instagram-icon {
+    color: #d63376;
+    background: #fff0f6;
+}
+
+.whatsapp-icon {
+    color: #16864b;
+    background: #eaf8ef;
+}
+
+.email-icon {
+    color: #176b45;
+    background: #eaf5ee;
+}
+
+.social-card h3 {
+    margin: 0 0 10px;
+    color: #183b2b;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.social-card p {
+    min-height: 48px;
+    margin: 0 0 22px;
+    color: #69736d;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.social-button {
+    width: 100%;
+    margin-top: auto;
+    padding: 13px 10px;
+    border-radius: 9px;
+    background: #126b43;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.2s ease;
+}
+
+.social-card:hover .social-button {
+    background: #0b5131;
+}
+
+.institution-contact {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding: 25px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #ffffff;
+    border: 1px solid #e5ece7;
+    border-radius: 15px;
+}
+
+.info-label {
+    color: #8a762c;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.institution-contact h3 {
+    margin: 9px 0 6px;
+    color: #176b45;
+    font-size: 18px;
+}
+
+.institution-contact p {
+    margin: 0;
+    color: #68716b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.phone-link {
+    flex-shrink: 0;
+    padding: 12px 17px;
+    border-radius: 9px;
+    background: #eaf5ee;
+    color: #176b45;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.phone-link:hover {
+    background: #d9ecdf;
+}
+
+@media (max-width: 700px) {
+    .connect-section {
+        padding: 42px 16px;
+    }
+
+    .connect-header {
+        margin-bottom: 28px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        max-width: 430px;
+    }
+
+    .social-card {
+        padding: 24px 22px;
+    }
+
+    .social-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 13px;
+    }
+
+    .social-icon svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .social-card p {
+        min-height: 0;
+        margin-bottom: 19px;
+    }
+
+    .social-button {
+        max-width: 280px;
+    }
+
+    .institution-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px;
+        gap: 18px;
+    }
+
+    .phone-link {
+        width: 100%;
+        text-align: center;
+    }
+  }
   }
   
 </style>
@@ -1475,7 +1707,7 @@ Located in Olavilam, Chokli, Kannur, the madrasa remains devoted to its mission 
             </a>
         </p>
     </div>
-</section>
+      </section>
 
 <footer>
 © 2026 Rahmaniyya Madarasa Olavilam
