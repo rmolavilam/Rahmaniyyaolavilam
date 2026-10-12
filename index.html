@@ -659,7 +659,57 @@ details[open] > summary::before {
     }
   
   }
-  
+  /* FORCE CONTACT SECTION BACKGROUND */
+
+#contact.connect-section {
+    display: block;
+    background-color: #ffffff !important;
+    color: #26352c;
+    width: calc(100% - 30px);
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 40px 24px;
+    border-radius: 22px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Professional contact links */
+
+#contact.connect-section a,
+#contact.connect-section a:visited {
+    color: #176b45;
+    text-decoration: none;
+}
+
+#contact.connect-section .phone-link {
+    background: #eaf5ee;
+    color: #176b45;
+    border-radius: 9px;
+    padding: 12px 17px;
+    font-weight: 700;
+}
+
+#contact.connect-section .social-button {
+    background: #116b43;
+    color: #ffffff !important;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#contact.connect-section .social-card {
+    background: #ffffff;
+    border: 1px solid #e0e9e2;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 600px) {
+    #contact.connect-section {
+        width: calc(100% - 24px);
+        padding: 28px 16px;
+    }
+  }
 </style>
   
 
